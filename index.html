@@ -3,9 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5897268a0d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <title>Document</title>
+    <style>
+        /* #top{
+            position: sticky;
+        } */
+        #parent{
+            position: relative;
+        }
+        #searchBar{
+            position: absolute;
+            left: 360px;
+            top: 200px;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <div class="row fixed-top bg-light">
+            <div class="col-12" >
+                    <div class="nav" >
+                        <h1 class="m-3">Masai <span class="text-primary">Hunger</span></h1>
+                        <!-- <div class="m-3 p-2"></div> -->
+                        <div class="ml-auto p-4">
+                            <a class="lead px-3" href="#">Home</a>
+                            <a class="lead px-3">Add restaurants</a>
+                            <a class="lead px-3" href="#">Order</a>
+                             
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12" id="parent" style="background-image: url(https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); height: 800px;">
+                <div class="input-group flex-nowrap pt-5" style="width: 600px;" id="searchBar">
+                    <input type="text" class="form-control" placeholder="Search for restaurant or a dish" aria-label="Username" aria-describedby="addon-wrapping">
+                    <div class="input-group-append">
+                        <button class="btn btn-danger" type="button" id="button-addon2">
+                            <i class="fas fa-search"></i>
+                        </button>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
