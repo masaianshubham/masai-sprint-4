@@ -11,7 +11,7 @@
         <div class="row fixed-top bg-light">
             <div class="col-12" >
                     <div class="nav" >
-                        <h1 class="m-3">Masai <span class="text-primary">Hunger</span></h1>
+                        <h1 class="m-3" ><a class="text-decoration-none" href="index.html"><span class="text-dark">Masai</span> <span class="text-primary">Hunger</a></span></h1>
                         <div class="ml-auto p-4">
                             <a class="lead px-3 text-decoration-none" href="index.html">Home</a>
                             <a class="lead px-3 text-decoration-none" href="#">Add restaurants</a>
@@ -24,31 +24,32 @@
         </div>
         <div class="row mt-5 pt-5">
             <div class="col-8 offset-2">
-                <h3 class="text-center py-2">Add a delicious dish</h3>
+                <h3 class="text-center py-2">Add a delicious serving</h3>
                 <div class="card p-4">
                     <form>
                         <div class="form-group">
-                          <label for="formGroupExampleInput">Restaurant Name</label>
-                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Restaurant Name">
+                          <label for="restaurantName">Restaurant Name</label>
+                          <input type="text" class="form-control" id="restaurantName" placeholder="Enter Restaurant Name">
                         </div>
                         <div class="form-group">
-                          <label for="formGroupExampleInput2">Description</label>
-                          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Description">
+                            <label for="dish">Dish Name</label>
+                            <input type="text" class="form-control" id="dish" placeholder="Enter Dish">
                         </div>
                         <div class="form-group">
-                            <label for="formGroupExampleInput3">Dish Name</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput3" placeholder="Enter Dish">
+                            <label for="description">Description</label>
+                            <input type="text" class="form-control" id="description" placeholder="Enter Description">
                         </div>
                         <div class="form-group">
-                            <label for="formGroupExampleInput4">Price</label>
-                            <input type="text" class="form-control" id="formGroupExampleInput4" placeholder="Enter Price (Rs.)">
+                            <label for="price">Price</label>
+                            <input type="text" class="form-control" id="price" placeholder="Enter Price (Rs.)">
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block">Add Item</button>
+                        <button type="submit" class="btn btn-primary btn-block" id="submit">Add Item</button>
 
                       </form>
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="addrestaurant.js"></script>
 </body>
 </html>

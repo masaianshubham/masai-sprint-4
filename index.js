@@ -26,8 +26,27 @@ var ele ={
         },
         {
             "name": "wenger's",
-            "dishName": "cake",
-            "price": "899.00"
+            "dishName": "Pineapple Cake",
+            "description": "Bakery",
+            "price": "300.00"
+        },
+        {
+            "name": "wenger's",
+            "dishName": "Black Forest Cake",
+            "description": "Bakery",
+            "price": "350.00"
+        },
+        {
+            "name": "wenger's",
+            "dishName": "Truffle Cake",
+            "description": "Bakery",
+            "price": "400.00"
+        },
+        {
+            "name": "wenger's",
+            "dishName": "Fondant Cake",
+            "description": "Bakery",
+            "price": "1400.00"
         }
     ]
 }
@@ -54,12 +73,17 @@ function appendcard(){
 
         var card = document.createElement('div')
         card.setAttribute('class', 'card')
+        card.style.maxHeight= "400px"
 
         var cardHead = document.createElement('div')
         cardHead.setAttribute('class', 'card-header bg-success text-white')
 
         var headerText = document.createElement('h5')
         headerText.textContent = data1["restaurant"][i]["name"]
+
+        // var img = document.createElement('img')
+        // img.setAttribute("class", 'card-img-top img-fluid')
+        // img.src = data1["restaurant"][i]["imgurl"]
 
         var cardBody = document.createElement('div')
         cardBody.setAttribute('class', 'card-body')
@@ -73,12 +97,14 @@ function appendcard(){
         cardText.textContent = data1["restaurant"][i]["description"]
 
         var amount = document.createElement('p')
-        amount.textContent = data1["restaurant"][i]["price"]
+        amount.textContent ="Rs." + " " + data1["restaurant"][i]["price"]
 
         var order = document.createElement('a')
         order.setAttribute('class', 'btn btn-primary text-white')
         order.textContent = "Order Now"
-        order.addEventListener('click', thank)
+        order.addEventListener('click', function(){
+
+        })
 
         cardBody.append(cardTittle, cardText, amount, order)
         cardHead.append(headerText)
@@ -101,3 +127,32 @@ function thank(){
 
     front.append(h1)
 }
+
+{/* <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header bg-info">
+      <h5 class="modal-title" id="exampleModalLabel">Log-in</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="recipient-name" class="col-form-label">Username</label>
+          <input type="text" class="form-control" id="recipient-name">
+        </div>
+        <div class="form-group">
+          <label for="message-text" class="col-form-label">Password</label>
+          <input type="password" class="form-control" id="message-text">
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Signup</button>
+      <button type="button" class="btn btn-primary">Login</button>
+    </div>
+  </div>
+</div>
+</div> */}
